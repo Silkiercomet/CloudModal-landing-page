@@ -64,9 +64,12 @@
         </ul>
     </section>
     <section class="carousel">
-        <p class="carousel__item">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do... “</p>
-        <p class="carousel__item">“Working with CloudReady has been a game changer for our business”</p>
-        <p class="carousel__item">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do... “</p>
+        <div class="carousel__container">
+            <p class="carousel__container_item">“Lorem ipsum dolor sit amet, consetur adipiscing elit, sed do... “</p>
+            <p class="carousel__container_item selected">“Working with CloudReady has been a game changer for our business”</p>
+            <p class="carousel__container_item">“Lorem ipsum dolor sit amet, consetur adipiscing elit, sed do... “</p>
+        </div>
+
     </section>
     <section class="about pad-reg">
         <header class="about__header">
@@ -137,9 +140,9 @@
             <h5>For one fixed monthly fee</h5>
             <p>Choose the plan that’s right for you</p>
         </header>
-        <main id="plans">
-            <ul class="plan__options">
-                <li class="plan__options_item">
+        <main id="plans" class="carousel2">
+            <ul class="plan__options .carousel__container">
+                <li class="plan__options_item carousel__container_item">
                     <header>
                         <p>Monthly</p>
                         <p>Gives you the most freedom. Perfect if you want to try the membership out.
@@ -153,7 +156,7 @@
                         <button>Get Started</button>
                     </div>
                     <p>What’s included</p>
-                    <ul>
+                    <ul class="features">
                         <li><i><img src="images/TickIcon.svg" alt="checkmark"></i>Unlimited requests</li>
                         <li><i><img src="images/TickIcon.svg" alt="checkmark"></i>Unlimited projects</li>
                         <li><i><img src="images/TickIcon.svg" alt="checkmark"></i>Unlimited users</li>
@@ -162,7 +165,7 @@
                         <li><i><img src="images/TickIcon.svg" alt="checkmark"></i>Pause or cancel anytime</li>
                     </ul>
                 </li>
-                <li class="plan__options_item">
+                <li class="plan__options_item carousel__container_item">
                     <header>
                         <p>Quarterly</p>
                         <p>For companies of all sizes, who know what they need.
@@ -176,7 +179,7 @@
                         <button>Get Started</button>
                     </div>
                     <p>What’s included</p>
-                    <ul>
+                    <ul class="features">
                         <li><i><img src="images/TickIcon.svg" alt="checkmark"></i>Unlimited requests</li>
                         <li><i><img src="images/TickIcon.svg" alt="checkmark"></i>Unlimited projects</li>
                         <li><i><img src="images/TickIcon.svg" alt="checkmark"></i>Unlimited users</li>
@@ -184,7 +187,7 @@
                         <li><i><img src="images/TickIcon.svg" alt="checkmark"></i>Shared Slack channel</li>
                     </ul>
                 </li>
-                <li class="plan__options_item">
+                <li class="plan__options_item carousel__container_item">
                     <header>
                         <p>Yearly</p>
                         <p>The most cost-effective option. For a long-term relationship with us 🚀
@@ -198,7 +201,7 @@
                         <button>Let’s Talk</button>
                     </div>
                     <p>What’s included</p>
-                    <ul>
+                    <ul class="features">
                         <li><i><img src="images/TickIcon.svg" alt="checkmark"></i>Unlimited requests</li>
                         <li><i><img src="images/TickIcon.svg" alt="checkmark"></i>Unlimited projects</li>
                         <li><i><img src="images/TickIcon.svg" alt="checkmark"></i>Unlimited users</li>
@@ -267,5 +270,6 @@
             </li>
         </ul>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

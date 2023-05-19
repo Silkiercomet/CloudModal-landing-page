@@ -69,7 +69,16 @@ body{
 .hidden{
     display: none;
 }
-.btn{
+.btn__styled button{
+  width: 195px;
+  height: 45px;
+
+  background-color: var(--bgColor);
+  border: none;
+  color: var(--lightBlue);
+  cursor: pointer;
+}
+.btn,.btn__styled{
     display: grid;
     place-items: center;
     width: 200px;
@@ -80,6 +89,7 @@ body{
 
     font-weight: 600;
     margin-inline: auto;
+    cursor: pointer;
 }
 header{
     display: flex;
@@ -111,6 +121,7 @@ header{
 .hero{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 40px;
     padding: 18px;
     margin-block: 60px;
@@ -162,18 +173,66 @@ header{
 /* perks list */
 
 /* carousel */
-
+.carousel2{
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  cursor: grab;
+  cursor: -webkit-grab;
+}
 .carousel{
     margin-block:100px 60px;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    cursor: grab;
+    cursor: -webkit-grab;
 }
+
+.carousel.grabbing, .carousel2.grabbing {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+}
+
+.carousel__container {
+  display: flex;
+  align-items: center;
+  transition: transform 0.5s ease;
+  margin-inline: 20% 8%;
+}
+
+.carousel__container_item {
+  width: 80%;
+  flex-shrink: 0;
+  padding: 45px 15px;
+  transform: scale(0.8);
+  opacity: 0.6;
+  background-color: var(--lightGray);
+  text-align: center;
+
+  transition: 500ms ease-in-out;
+}
+
+.selected {
+  transform: scale(1);
+  opacity: 1;
+  font-weight: 600;
+}
+
 
 /* carousel */
 
 /* about */
 
-
+.about{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .about figure{
     margin-block:70px 60px;
+
 }
 .about__list{
     list-style: none;
@@ -222,5 +281,62 @@ header{
 .plan{
     margin-top: 100px;
 }
+.plan__options{
+  list-style: none;
+  padding-left: 0;
+}
+.plan__options_item:nth-child(1){
+  border: 2px solid var(--lightBlue);
+}
+.plan__options_item:nth-child(2),.plan__options_item:nth-child(3){
+  border: 2px solid transparent;
+  background-color: var(--lightGray);
+}
+.plan__options_item{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 
+  padding: 25px 20px;
+  max-width: 300px;
+  gap: 30px;
+}
+.plan__options_item header{
+  text-align: left;
+  gap: 14px;
+}
+.plan__options_item header p:nth-child(1){
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.plan__options_item header p:nth-child(2), .amount p:nth-child(2){
+  color: var(--lightTextGray);
+}
+.amount p:nth-child(1){
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.amount p:nth-child(1) span{
+  font-size: 1rem;
+  font-weight: 400;
+}
+.plan__options_item p {
+  font-weight: 600;
+}
+.features{
+  display: flex;
+  flex-direction: column;
+
+  list-style: none;
+  padding-left: 0;
+  gap: 10px;
+}
+.features li{
+  display: flex;
+  gap: 10px;
+}
+#plans{
+  display: flex;
+}
 /* plan */
