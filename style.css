@@ -91,6 +91,12 @@ body{
     margin-inline: auto;
     cursor: pointer;
 }
+.btn button{
+  border: none;
+  background: transparent;
+  font-family: inherit;
+  color: var(--lightGray);
+}
 header{
     display: flex;
     flex-direction: column;
@@ -173,13 +179,7 @@ header{
 /* perks list */
 
 /* carousel */
-.carousel2{
-  max-width: 100%;
-  overflow: hidden;
-  position: relative;
-  cursor: grab;
-  cursor: -webkit-grab;
-}
+
 .carousel{
     margin-block:100px 60px;
     max-width: 100%;
@@ -189,7 +189,7 @@ header{
     cursor: -webkit-grab;
 }
 
-.carousel.grabbing, .carousel2.grabbing {
+.carousel.grabbing {
   cursor: grabbing;
   cursor: -webkit-grabbing;
 }
@@ -280,10 +280,30 @@ header{
 
 .plan{
     margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 .plan__options{
+  margin-block:100px 60px;
+
+  position: relative;
+  max-width: 100%;
+  cursor: grab;
+  cursor: -webkit-grab;
   list-style: none;
   padding-left: 0;
+  display: flex;
+  gap: 25px;
+  margin-inline: 30% 40%;
+  transition: transform 0.5s ease;
+
+}
+.plan__options.grabbing {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
 }
 .plan__options_item:nth-child(1){
   border: 2px solid var(--lightBlue);
@@ -296,9 +316,9 @@ header{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
 
   padding: 25px 20px;
+  min-width: 300px;
   max-width: 300px;
   gap: 30px;
 }
@@ -312,6 +332,7 @@ header{
 }
 .plan__options_item header p:nth-child(2), .amount p:nth-child(2){
   color: var(--lightTextGray);
+  font-size: .9rem;
 }
 .amount p:nth-child(1){
   font-size: 1.5rem;
@@ -336,7 +357,103 @@ header{
   display: flex;
   gap: 10px;
 }
-#plans{
-  display: flex;
-}
 /* plan */
+
+/* FAQ */
+
+.FAQ{
+  display: grid;
+  place-items: center;
+  padding-inline: 30px;
+}
+.FAQ header {
+margin-block: 55px;
+}
+/* style of accordion -----------------------------------------------------------*/
+.FAQ__list{
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.FAQ__list_item label p{
+padding: 0 0 22px 0;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+cursor: pointer;
+
+}
+
+.collapse {
+  color: var(--lightTextGray);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  padding-bottom: 0px;
+  overflow: hidden;
+  height: 0px;
+  transition: 300ms ease-in-out;
+}
+.icon{
+  transform: rotate(0);
+  transition: 300ms ease-in-out;
+}
+/* style of accordion -----------------------------------------------------------*/
+
+/* functionalitie of accordion -----------------------------------------------------------*/
+.active {
+  height: 100px;
+  padding-bottom: 20px;
+
+}
+.rotate{
+  transform: rotate(180deg);
+  transition: 300ms ease-in-out;
+}
+/* functionalitie of accordion -----------------------------------------------------------*/
+
+/* FAQ */
+
+/* footer */
+
+footer{
+  padding-inline: 30px;
+  margin-block: 60px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.footer__separator{
+  margin-block: 80px 40px;
+  height: 2px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.social__contact {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+.social__contact > * {
+  cursor: pointer;
+}
+.social__contact > * svg path {
+  transition: 300ms ease-in-out;
+}
+.social__contact_facebook:hover svg path {
+  fill: #4267b2;
+}
+.social__contact_twitter:hover svg path {
+  fill: #1da1f2;
+}
+.social__contact_instagram:hover svg path {
+  fill: #d62976;
+}
+/* footer */
