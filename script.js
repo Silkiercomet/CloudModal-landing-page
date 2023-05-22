@@ -101,6 +101,10 @@ let prevTranslate = 0;
 let animationID = 0;
 let currentIndex = 1;
 
+if (window.innerWidth >= 834 && window.innerWidth < 1024) {
+  currentIndex = 0; 
+}
+
 slides.forEach((slide, index) => {
   const slideDraggable = new DraggableObject(slide, index);
   slide.addEventListener('mousedown', slideDraggable.dragStart);
