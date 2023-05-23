@@ -91,8 +91,11 @@ sliderContainer.forEach((slider) => {
 
   setPositionByIndex();
 });
+
+
 const sliderContainer2 = document.querySelectorAll(".plan__options");
-sliderContainer2.forEach((slider) => {
+window.addEventListener('resize', function(){
+  sliderContainer2.forEach((slider) => {
     const slides = slider.querySelectorAll(".plan__options_item");
 let isDragging = false;
 let startPosition = 0;
@@ -108,17 +111,43 @@ window.addEventListener("resize", () => {
   }  
 });
 
-slides.forEach((slide, index) => {
-  const slideDraggable = new DraggableObject(slide, index);
-  slide.addEventListener('mousedown', slideDraggable.dragStart);
-  slide.addEventListener('touchstart', slideDraggable.dragStart);
-  slide.addEventListener('mouseup', slideDraggable.dragEnd);
-  slide.addEventListener('touchend', slideDraggable.dragEnd);
-  slide.addEventListener('mouseleave', slideDraggable.dragEnd);
-  slide.addEventListener('mousemove', slideDraggable.drag);
-  slide.addEventListener('touchmove', slideDraggable.drag);
-});
 
+
+slides.forEach((slide, index) => {
+  let mediaQuery = window.matchMedia("(min-width: 334px) and (max-width: 1023px)");
+  const slideDraggable = new DraggableObject(slide, index);
+  function handleScreenSizeChange(mq){
+  if (mq.matches) {
+
+    slide.addEventListener('mousedown', slideDraggable.dragStart);
+    slide.addEventListener('touchstart', slideDraggable.dragStart);
+    slide.addEventListener('mouseup', slideDraggable.dragEnd);
+    slide.addEventListener('touchend', slideDraggable.dragEnd);
+    slide.addEventListener('mouseleave', slideDraggable.dragEnd);
+    slide.addEventListener('mousemove', slideDraggable.drag);
+    slide.addEventListener('touchmove', slideDraggable.drag);
+    finish = false
+  } else {
+    // Screen size is outside the specified range
+    slide.removeEventListener('mousedown', slideDraggable.dragStart);
+    slide.removeEventListener('touchstart', slideDraggable.dragStart);
+    slide.removeEventListener('mouseup', slideDraggable.dragEnd);
+    slide.removeEventListener('touchend', slideDraggable.dragEnd);
+    slide.removeEventListener('mouseleave', slideDraggable.dragEnd);
+    slide.removeEventListener('mousemove', slideDraggable.drag);
+    slide.removeEventListener('touchmove', slideDraggable.drag);
+    // Call your function or perform any actions here
+    finish = true
+    console.log("Screen size is outside the range");
+    return
+  }}
+  handleScreenSizeChange(mediaQuery);
+
+
+});
+if(!finish){
+  return
+}
 function DraggableObject(slide, index) {
   this.slide = slide;
   this.index = index;
@@ -180,11 +209,16 @@ function setPositionByIndex() {
   setSliderPosition();
 }
 
+
 window.addEventListener('resize', setPositionByIndex);
 
-setPositionByIndex();
-
 });
+});
+
+
+
+
+
 
 // creating and event listener for the checkbox collaose accordion
 
