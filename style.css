@@ -559,7 +559,16 @@ footer{
 
   }
   /* navbar */
+  /* plan */
+  .plan__options{
+    transform: translateX(-300px);
+    cursor: default;
+  }
+  .plan__options.grabbing {
+    cursor:default;
 
+  }
+  /* plan */
   /* hero */
   .hero__text h1{
     font-size: 42px;
@@ -578,3 +587,23 @@ footer{
 }
 
 /* ------------------------------------------------------------ small screen 1024px */
+
+/* ------------------------------------------------------------ desktop and large screen 1440px > + */
+@media screen and (max-width:1440px) {
+  .navbar, .about{
+    margin-inline: auto;
+  }
+  .navbar, .about{
+    max-width: 954px;
+  }
+
+  /* about */
+  .about{
+    gap: 45px;
+  }
+  .about__list{
+    gap: 50px;
+  }
+  /* about */
+}
+/* ------------------------------------------------------------ desktop and large screen 1440px > + */
