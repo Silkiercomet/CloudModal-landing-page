@@ -1,282 +1,493 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>CloudReady Landing Page</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar pad-reg">
-        <figure>
-            <img src="./images/logo light.png" alt="cloudready logo">
-        </figure>
-        <figure class="navbar__mobile_menu">
-            <img src="images/menu.svg" alt="hamburguer menu">
-        </figure>
-        <div class="btn__styled">
-            <button>Login</button>
-        </div>
+      <figure>
+        <img src="./images/logo light.png" alt="cloudready logo" />
+      </figure>
+      <figure class="navbar__mobile_menu">
+        <img src="images/menu.svg" alt="hamburguer menu" />
+      </figure>
+      <div class="btn__styled">
+        <button>Login</button>
+      </div>
     </nav>
     <section class="hero">
-        <header class="hero__text">
-            <h1>Expert Advice For Your 
-                Software Project</h1>
-            <p>Get the best software development guidance from technical experts - for one fixed monthly fee.</p>
-            <a href="#plans" class="btn">
-                <button>See Plans</button>
-            </a>
-        </header>
-        <figure class="hero__placeholder">
-            <img src="images/Group 4.png" alt="rocket image">
-        </figure>
-        <ul class="hero__listOfPartners">
-            <li><figure><img src="images/vercel.png" alt="vercel logo"></figure></li>
-            <li><figure><img src="images/aws.png" alt="aws logo"></figure></li>
-            <li><figure><img src="images/Open AI.png" alt="openAi logo"></figure></li>
-            <li><figure><img src="images/netlify.png" alt="netlify logo"></figure></li>
-            <li><figure><img src="images/render.png" alt="render logo"></figure></li>
-            <li><figure><img src="images/heroku.png" alt="heroku logo"></figure></li>
-            <li><figure><img src="images/google cloud.png" alt="google cloud logo"></figure></li>
-        </ul>
+      <header class="hero__text">
+        <h1>Expert Advice For Your Software Project</h1>
+        <p>
+          Get the best software development guidance from technical experts
+          - for one fixed monthly fee.
+        </p>
+        <a href="#plans" class="btn">
+          <button>See Plans</button>
+        </a>
+      </header>
+      <figure class="hero__placeholder">
+        <img class="fade-in" src="images/Group 4.png" alt="rocket image" />
+      </figure>
+      <ul class="hero__listOfPartners">
+        <li>
+          <figure><img src="images/vercel.png" alt="vercel logo" /></figure>
+        </li>
+        <li>
+          <figure><img src="images/aws.png" alt="aws logo" /></figure>
+        </li>
+        <li>
+          <figure><img src="images/Open AI.png" alt="openAi logo" /></figure>
+        </li>
+        <li>
+          <figure><img src="images/netlify.png" alt="netlify logo" /></figure>
+        </li>
+        <li>
+          <figure><img src="images/render.png" alt="render logo" /></figure>
+        </li>
+        <li>
+          <figure><img src="images/heroku.png" alt="heroku logo" /></figure>
+        </li>
+        <li>
+          <figure>
+            <img src="images/google cloud.png" alt="google cloud logo" />
+          </figure>
+        </li>
+      </ul>
     </section>
     <section class="perks pad-reg">
-        <header>
-            <h2>Know the best way to build your application</h2>
-            <p>Get top-notch technical support for a fraction of the cost.</p>
-        </header>
-        <ul class="perks__list">
-            <li class="perks__list_item">
-                <figure class="perk__icon">
-                    <img src="images/wired-gradient-1316-computer-mouse-left-click (1) 1.svg" alt="computer mouse icon">
-                </figure>
-                <p>Select the plan that's right for your business.</p>
-            </li>
-            <li class="perks__list_item">
-                <figure class="perk__icon">
-                    <img src="images/wired-gradient-456-handshake-deal (1) 1.svg" alt="computer mouse icon">
-                </figure>
-                <p>Get paired with an expert whose skills align with your needs.</p>
-            </li>
-            <li class="perks__list_item">
-                <figure class="perk__icon">
-                    <img src="images/wired-gradient-489-rocket-space 1.svg" alt="computer mouse icon">
-                </figure>
-                <p>Leverage our expertise to ship better software, in less time.</p>
-            </li>
-        </ul>
+      <header>
+        <h2>Know the best way to build your application</h2>
+        <p>Get top-notch technical support for a fraction of the cost.</p>
+      </header>
+      <ul class="perks__list">
+        <li class="perks__list_item">
+          <figure class="perk__icon">
+            <img
+              src="images/wired-gradient-1316-computer-mouse-left-click (1) 1.svg"
+              alt="computer mouse icon"
+            />
+          </figure>
+          <p>Select the plan that's right for your business.</p>
+        </li>
+        <li class="perks__list_item">
+          <figure class="perk__icon">
+            <img
+              src="images/wired-gradient-456-handshake-deal (1) 1.svg"
+              alt="computer mouse icon"
+            />
+          </figure>
+          <p>Get paired with an expert whose skills align with your needs.</p>
+        </li>
+        <li class="perks__list_item">
+          <figure class="perk__icon">
+            <img
+              src="images/wired-gradient-489-rocket-space 1.svg"
+              alt="computer mouse icon"
+            />
+          </figure>
+          <p>Leverage our expertise to ship better software, in less time.</p>
+        </li>
+      </ul>
     </section>
     <section class="carousel">
-        <div class="carousel__container">
-            <p class="carousel__container_item">“Lorem ipsum dolor sit amet, consetur adipiscing elit, sed do... “</p>
-            <p class="carousel__container_item selected">“Working with CloudReady has been a game changer for our business”</p>
-            <p class="carousel__container_item">“Lorem ipsum dolor sit amet, consetur adipiscing elit, sed do... “</p>
-        </div>
-
+      <div class="carousel__container">
+        <p class="carousel__container_item">
+          “Lorem ipsum dolor sit amet, consetur adipiscing elit, sed do... “
+        </p>
+        <p class="carousel__container_item selected">
+          “Working with CloudReady has been a game changer for our business”
+        </p>
+        <p class="carousel__container_item">
+          “Lorem ipsum dolor sit amet, consetur adipiscing elit, sed do... “
+        </p>
+      </div>
     </section>
     <section class="about pad-reg">
-        <header class="about__header a">
-            <h3>A tech expert in your corner</h3>
-            <p>Ship higher quality production software in less time.</p>
-        </header>
-        <figure class="b">
-            <img src="images/Group 3.png" alt="table image">
-        </figure>
-        <ul class="about__list c">
-            <li class="about__list_item">
-                <p class="about__list_item-header">Technical Clarity</p>
-                <p>Clear and concise technical guidance that helps you make informed decisions throughout the development process.
-                </p>
-            </li>
-            <li class="about__list_item">
-                <p class="about__list_item-header">Fewer Mistakes</p>
-                <p>Expert oversight and guidance to reduce the risk of costly mistakes and errors that set back your development timeline.</p>
-            </li>
-            <li class="about__list_item">
-                <p class="about__list_item-header">Ship Faster</p>
-                <p>Identify bottlenecks and inefficiencies in your development process, optimise your workflows and accelerate your time to market.</p>
-            </li>
-        </ul>
+      <header class="about__header a">
+        <h3>A tech expert in your corner</h3>
+        <p>Ship higher quality production software in less time.</p>
+      </header>
+      <figure class="b">
+        <img class="fade-in" src="images/Group 3.png" alt="table image" />
+      </figure>
+      <ul class="about__list c">
+        <li class="about__list_item">
+          <p class="about__list_item-header">Technical Clarity</p>
+          <p>
+            Clear and concise technical guidance that helps you make informed
+            decisions throughout the development process.
+          </p>
+        </li>
+        <li class="about__list_item">
+          <p class="about__list_item-header">Fewer Mistakes</p>
+          <p>
+            Expert oversight and guidance to reduce the risk of costly mistakes
+            and errors that set back your development timeline.
+          </p>
+        </li>
+        <li class="about__list_item">
+          <p class="about__list_item-header">Ship Faster</p>
+          <p>
+            Identify bottlenecks and inefficiencies in your development process,
+            optimise your workflows and accelerate your time to market.
+          </p>
+        </li>
+      </ul>
     </section>
 
     <section class="details">
-        <header>
-            <h4>With you from idea to production</h4>
-        </header>
-        <ul class="details__list">
-            <li class="details__list_item">
-                <p>Designing software architecture for applications or systems</p>
-                <figure><img src="images/Vector.svg" alt=""></figure>
-            </li>
-            <li class="details__list_item">
-                <p>Ensuring software is secure, scalable, maintainable, and efficient</p>
-                <figure><img src="images/icon.svg" alt=""></figure>
-            </li>
-            <li class="details__list_item">
-                <p>Managing technical risks and potential blockers for project success.</p>
-                <figure><img src="images/Vector (2).svg" alt=""></figure>
-            </li>
-            <li class="details__list_item">
-                <p>Staying current with emerging technologies and best practices</p>
-                <figure><img src="images/icon (1).svg" alt=""></figure>
-            </li>
-            <li class="details__list_item">
-                <p>Making technical decisions to solve challenges and meet requirements</p>
-                <figure><img src="images/Vector (1).svg" alt=""></figure>
-            </li>
-            <li class="details__list_item">
-                <p>Optimise your development process with AI-powered strategies and tools</p>
-                <figure><img src="images/brain icon.svg" alt=""></figure>
-            </li>
-            <li class="details__list_item">
-                <p>Ensuring compliance with industry or organisational standards</p>
-                <figure><img src="images/Vector (3).svg" alt=""></figure>
-            </li>
-            <li class="details__list_item">
-                <p>Designing software architecture for applications or systems</p>
-                <figure><img src="images/Vector.svg" alt=""></figure>
-            </li>
-        </ul>
+      <header>
+        <h4>With you from idea to production</h4>
+      </header>
+      <ul class="details__list">
+        <li class="details__list_item">
+          <p>Designing software architecture for applications or systems</p>
+          <figure><img src="images/Vector.svg" alt="" /></figure>
+        </li>
+        <li class="details__list_item">
+          <p>
+            Ensuring software is secure, scalable, maintainable, and efficient
+          </p>
+          <figure><img src="images/icon.svg" alt="" /></figure>
+        </li>
+        <li class="details__list_item">
+          <p>
+            Managing technical risks and potential blockers for project success.
+          </p>
+          <figure><img src="images/Vector (2).svg" alt="" /></figure>
+        </li>
+        <li class="details__list_item">
+          <p>Staying current with emerging technologies and best practices</p>
+          <figure><img src="images/icon (1).svg" alt="" /></figure>
+        </li>
+        <li class="details__list_item">
+          <p>
+            Making technical decisions to solve challenges and meet requirements
+          </p>
+          <figure><img src="images/Vector (1).svg" alt="" /></figure>
+        </li>
+        <li class="details__list_item">
+          <p>
+            Optimise your development process with AI-powered strategies and
+            tools
+          </p>
+          <figure><img src="images/brain icon.svg" alt="" /></figure>
+        </li>
+        <li class="details__list_item">
+          <p>Ensuring compliance with industry or organisational standards</p>
+          <figure><img src="images/Vector (3).svg" alt="" /></figure>
+        </li>
+        <li class="details__list_item">
+          <p>Designing software architecture for applications or systems</p>
+          <figure><img src="images/Vector.svg" alt="" /></figure>
+        </li>
+      </ul>
     </section>
     <section class="plan">
-        <header class="plan__header">
-            <h5>For one fixed monthly fee</h5>
-            <p>Choose the plan that’s right for you</p>
-        </header>
-        <main id="plans">
-            <ul class="plan__options">
-                <li class="plan__options_item">
-                    <header>
-                        <p>Monthly</p>
-                        <p>Gives you the most freedom. Perfect if you want to try the membership.
-                        </p>
-                    </header>
-                    <div class="amount">
-                        <p>$5,990<span>/mo</span></p>
-                        <p>pause or cancel anytime</p>
-                    </div>
-                    <div class="btn__styled">
-                        <button>Get Started</button>
-                    </div>
-                    <p>What’s included</p>
-                    <ul class="features">
-                        <li><i><img src="images/TickIcon.svg" alt="checkmark"></i>Unlimited requests</li>
-                        <li><i><img src="images/TickIcon.svg" alt="checkmark"></i>Unlimited projects</li>
-                        <li><i><img src="images/TickIcon.svg" alt="checkmark"></i>Unlimited users</li>
-                        <li><i><img src="images/TickIcon.svg" alt="checkmark"></i>1 CloudReady expert</li>
-                        <li><i><img src="images/TickIcon.svg" alt="checkmark"></i>Shared Slack channel</li>
-                        <li><i><img src="images/TickIcon.svg" alt="checkmark"></i>Pause or cancel anytime</li>
-                    </ul>
-                </li>
-                <li class="plan__options_item">
-                    <header>
-                        <p>Quarterly</p>
-                        <p>For companies of all sizes, who know what they need.
-                        </p>
-                    </header>
-                    <div class="amount">
-                        <p>$5,490<span>/mo</span></p>
-                        <p>pause or cancel anytime</p>
-                    </div>
-                    <div class="btn">
-                        <button>Get Started</button>
-                    </div>
-                    <p>What’s included</p>
-                    <ul class="features">
-                        <li><i><img src="images/TickIcon.svg" alt="checkmark"></i>Unlimited requests</li>
-                        <li><i><img src="images/TickIcon.svg" alt="checkmark"></i>Unlimited projects</li>
-                        <li><i><img src="images/TickIcon.svg" alt="checkmark"></i>Unlimited users</li>
-                        <li><i><img src="images/TickIcon.svg" alt="checkmark"></i>1 CloudReady expert</li>
-                        <li><i><img src="images/TickIcon.svg" alt="checkmark"></i>Shared Slack channel</li>
-                    </ul>
-                </li>
-                <li class="plan__options_item">
-                    <header>
-                        <p>Yearly</p>
-                        <p>The most cost-effective option. For a long-term relationship with us 🚀
-                        </p>
-                    </header>
-                    <div class="amount">
-                        <p>$4,990<span>/mo</span></p>
-                        <p>pause or cancel anytime</p>
-                    </div>
-                    <div class="btn__styled">
-                        <button>Let’s Talk</button>
-                    </div>
-                    <p>What’s included</p>
-                    <ul class="features">
-                        <li><i><img src="images/TickIcon.svg" alt="checkmark"></i>Unlimited requests</li>
-                        <li><i><img src="images/TickIcon.svg" alt="checkmark"></i>Unlimited projects</li>
-                        <li><i><img src="images/TickIcon.svg" alt="checkmark"></i>Unlimited users</li>
-                        <li><i><img src="images/TickIcon.svg" alt="checkmark"></i>1 CloudReady expert</li>
-                        <li><i><img src="images/TickIcon.svg" alt="checkmark"></i>Shared Slack channel</li>
-                        <li><i><img src="images/TickIcon.svg" alt="checkmark"></i>Pause or cancel anytime</li>
-                    </ul>
-                </li>
+      <header class="plan__header">
+        <h5>For one fixed monthly fee</h5>
+        <p>Choose the plan that’s right for you</p>
+      </header>
+      <main id="plans">
+        <ul class="plan__options">
+          <li class="plan__options_item">
+            <header>
+              <p>Monthly</p>
+              <p>
+                Gives you the most freedom. Perfect if you want to try the
+                membership.
+              </p>
+            </header>
+            <div class="amount">
+              <p>$5,990<span>/mo</span></p>
+              <p>pause or cancel anytime</p>
+            </div>
+            <div class="btn__styled">
+              <button>Get Started</button>
+            </div>
+            <p>What’s included</p>
+            <ul class="features">
+              <li>
+                <i><img src="images/TickIcon.svg" alt="checkmark" /></i
+                >Unlimited requests
+              </li>
+              <li>
+                <i><img src="images/TickIcon.svg" alt="checkmark" /></i
+                >Unlimited projects
+              </li>
+              <li>
+                <i><img src="images/TickIcon.svg" alt="checkmark" /></i
+                >Unlimited users
+              </li>
+              <li>
+                <i><img src="images/TickIcon.svg" alt="checkmark" /></i>1
+                CloudReady expert
+              </li>
+              <li>
+                <i><img src="images/TickIcon.svg" alt="checkmark" /></i>Shared
+                Slack channel
+              </li>
+              <li>
+                <i><img src="images/TickIcon.svg" alt="checkmark" /></i>Pause or
+                cancel anytime
+              </li>
             </ul>
-        </main>
+          </li>
+          <li class="plan__options_item">
+            <header>
+              <p>Quarterly</p>
+              <p>For companies of all sizes, who know what they need.</p>
+            </header>
+            <div class="amount">
+              <p>$5,490<span>/mo</span></p>
+              <p>pause or cancel anytime</p>
+            </div>
+            <div class="btn">
+              <button>Get Started</button>
+            </div>
+            <p>What’s included</p>
+            <ul class="features">
+              <li>
+                <i><img src="images/TickIcon.svg" alt="checkmark" /></i
+                >Unlimited requests
+              </li>
+              <li>
+                <i><img src="images/TickIcon.svg" alt="checkmark" /></i
+                >Unlimited projects
+              </li>
+              <li>
+                <i><img src="images/TickIcon.svg" alt="checkmark" /></i
+                >Unlimited users
+              </li>
+              <li>
+                <i><img src="images/TickIcon.svg" alt="checkmark" /></i>1
+                CloudReady expert
+              </li>
+              <li>
+                <i><img src="images/TickIcon.svg" alt="checkmark" /></i>Shared
+                Slack channel
+              </li>
+            </ul>
+          </li>
+          <li class="plan__options_item">
+            <header>
+              <p>Yearly</p>
+              <p>
+                The most cost-effective option. For a long-term relationship
+                with us 🚀
+              </p>
+            </header>
+            <div class="amount">
+              <p>$4,990<span>/mo</span></p>
+              <p>pause or cancel anytime</p>
+            </div>
+            <div class="btn__styled">
+              <button>Let’s Talk</button>
+            </div>
+            <p>What’s included</p>
+            <ul class="features">
+              <li>
+                <i><img src="images/TickIcon.svg" alt="checkmark" /></i
+                >Unlimited requests
+              </li>
+              <li>
+                <i><img src="images/TickIcon.svg" alt="checkmark" /></i
+                >Unlimited projects
+              </li>
+              <li>
+                <i><img src="images/TickIcon.svg" alt="checkmark" /></i
+                >Unlimited users
+              </li>
+              <li>
+                <i><img src="images/TickIcon.svg" alt="checkmark" /></i>1
+                CloudReady expert
+              </li>
+              <li>
+                <i><img src="images/TickIcon.svg" alt="checkmark" /></i>Shared
+                Slack channel
+              </li>
+              <li>
+                <i><img src="images/TickIcon.svg" alt="checkmark" /></i>Pause or
+                cancel anytime
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </main>
     </section>
 
     <section class="FAQ">
-        <header>
-            <h6>FAQs</h6>
-        </header>
-        <ul class="FAQ__list">
-            <li class="FAQ__list_item">
-                <label for="option1"><p><span>What is a fractional CTO and how can CloudReady help?</span><i class="icon"><img src="images/Arrow icon.svg"></i></p></label>
-                <input type="checkbox" name="option1" id="option1" class="hidden accordion">
-                <p class="collapse">A fractional CTO, or Chief Technology Officer, is a professional who provides technical leadership, guidance, and expertise to a company on a part-time or project-based basis, rather than as a full-time employee. This arrangement allows businesses, particularly startups and small to medium-sized enterprises, to benefit from the strategic insights and experience of a CTO without the cost and commitment associated with hiring a full-time executive.
-
-                    CloudReady offers access to a network of highly skilled fractional CTOs who can help your business make informed decisions about technology strategy, software development, infrastructure management, and other technology-related aspects. Our experts work closely with your leadership and development teams to ensure the successful planning, execution, and delivery of software projects while maximizing efficiency, security, and scalability.
-                    
-                    By partnering with CloudReady, you gain access to top-notch technical expertise tailored to your specific needs and goals. Our subscription-based model allows you to scale up or down as your needs change, giving you the flexibility to adjust your level of engagement with our expert team. Ultimately, this helps your business drive better results and stay competitive in the ever-evolving tech landscape.
-                </p>
-            </li>
-            <li class="FAQ__list_item">
-                <label for="option2"><p><span>Why wouldn't I just hire a full-time CTO?</span><i class="icon"><img src="images/Arrow icon.svg"></i></p></label>
-                <input type="checkbox" name="option2" id="option2" class="hidden accordion">
-                <p class="collapse">A fractional CTO, or Chief Technology Officer, is a professional who provides technical leadership, guidance, and expertise to a company on a part-time or project-based basis, rather than as a full-time employee. This arrangement allows businesses, particularly startups and small to medium-sized enterprises, to benefit from the strategic insights and experience of a CTO without the cost and commitment associated with hiring a full-time executive.
-
-                    CloudReady offers access to a network of highly skilled fractional CTOs who can help your business make informed decisions about technology strategy, software development, infrastructure management, and other technology-related aspects. Our experts work closely with your leadership and development teams to ensure the successful planning, execution, and delivery of software projects while maximizing efficiency, security, and scalability.
-                    
-                    By partnering with CloudReady, you gain access to top-notch technical expertise tailored to your specific needs and goals. Our subscription-based model allows you to scale up or down as your needs change, giving you the flexibility to adjust your level of engagement with our expert team. Ultimately, this helps your business drive better results and stay competitive in the ever-evolving tech landscape.
-                </p>
-            </li>
-            <li class="FAQ__list_item">
-                <label for="option3"><p><span>Why do you price your work this way?</span><i class="icon"><img src="images/Arrow icon.svg"></i></p></label>
-                <input type="checkbox" name="option3" id="option3" class="hidden accordion">
-                <p class="collapse">A fractional CTO, or Chief Technology Officer, is a professional who provides technical leadership, guidance, and expertise to a company on a part-time or project-based basis, rather than as a full-time employee. This arrangement allows businesses, particularly startups and small to medium-sized enterprises, to benefit from the strategic insights and experience of a CTO without the cost and commitment associated with hiring a full-time executive.
-
-                    CloudReady offers access to a network of highly skilled fractional CTOs who can help your business make informed decisions about technology strategy, software development, infrastructure management, and other technology-related aspects. Our experts work closely with your leadership and development teams to ensure the successful planning, execution, and delivery of software projects while maximizing efficiency, security, and scalability.
-                    
-                    By partnering with CloudReady, you gain access to top-notch technical expertise tailored to your specific needs and goals. Our subscription-based model allows you to scale up or down as your needs change, giving you the flexibility to adjust your level of engagement with our expert team. Ultimately, this helps your business drive better results and stay competitive in the ever-evolving tech landscape.
-                </p>
-            </li>
-        </ul>
+      <header>
+        <h6>FAQs</h6>
+      </header>
+      <ul class="FAQ__list">
+        <li class="FAQ__list_item">
+          <label for="option1"
+            ><p>
+              <span>What is a fractional CTO and how can CloudReady help?</span
+              ><i class="icon"><img src="images/Arrow icon.svg" /></i></p
+          ></label>
+          <input
+            type="checkbox"
+            name="option1"
+            id="option1"
+            class="hidden accordion"
+          />
+          <p class="collapse">
+            A fractional CTO, or Chief Technology Officer, is a professional who
+            provides technical leadership, guidance, and expertise to a company
+            on a part-time or project-based basis, rather than as a full-time
+            employee. This arrangement allows businesses, particularly startups
+            and small to medium-sized enterprises, to benefit from the strategic
+            insights and experience of a CTO without the cost and commitment
+            associated with hiring a full-time executive. CloudReady offers
+            access to a network of highly skilled fractional CTOs who can help
+            your business make informed decisions about technology strategy,
+            software development, infrastructure management, and other
+            technology-related aspects. Our experts work closely with your
+            leadership and development teams to ensure the successful planning,
+            execution, and delivery of software projects while maximizing
+            efficiency, security, and scalability. By partnering with
+            CloudReady, you gain access to top-notch technical expertise
+            tailored to your specific needs and goals. Our subscription-based
+            model allows you to scale up or down as your needs change, giving
+            you the flexibility to adjust your level of engagement with our
+            expert team. Ultimately, this helps your business drive better
+            results and stay competitive in the ever-evolving tech landscape.
+          </p>
+        </li>
+        <li class="FAQ__list_item">
+          <label for="option2"
+            ><p>
+              <span>Why wouldn't I just hire a full-time CTO?</span
+              ><i class="icon"><img src="images/Arrow icon.svg" /></i></p
+          ></label>
+          <input
+            type="checkbox"
+            name="option2"
+            id="option2"
+            class="hidden accordion"
+          />
+          <p class="collapse">
+            A fractional CTO, or Chief Technology Officer, is a professional who
+            provides technical leadership, guidance, and expertise to a company
+            on a part-time or project-based basis, rather than as a full-time
+            employee. This arrangement allows businesses, particularly startups
+            and small to medium-sized enterprises, to benefit from the strategic
+            insights and experience of a CTO without the cost and commitment
+            associated with hiring a full-time executive. CloudReady offers
+            access to a network of highly skilled fractional CTOs who can help
+            your business make informed decisions about technology strategy,
+            software development, infrastructure management, and other
+            technology-related aspects. Our experts work closely with your
+            leadership and development teams to ensure the successful planning,
+            execution, and delivery of software projects while maximizing
+            efficiency, security, and scalability. By partnering with
+            CloudReady, you gain access to top-notch technical expertise
+            tailored to your specific needs and goals. Our subscription-based
+            model allows you to scale up or down as your needs change, giving
+            you the flexibility to adjust your level of engagement with our
+            expert team. Ultimately, this helps your business drive better
+            results and stay competitive in the ever-evolving tech landscape.
+          </p>
+        </li>
+        <li class="FAQ__list_item">
+          <label for="option3"
+            ><p>
+              <span>Why do you price your work this way?</span
+              ><i class="icon"><img src="images/Arrow icon.svg" /></i></p
+          ></label>
+          <input
+            type="checkbox"
+            name="option3"
+            id="option3"
+            class="hidden accordion"
+          />
+          <p class="collapse">
+            A fractional CTO, or Chief Technology Officer, is a professional who
+            provides technical leadership, guidance, and expertise to a company
+            on a part-time or project-based basis, rather than as a full-time
+            employee. This arrangement allows businesses, particularly startups
+            and small to medium-sized enterprises, to benefit from the strategic
+            insights and experience of a CTO without the cost and commitment
+            associated with hiring a full-time executive. CloudReady offers
+            access to a network of highly skilled fractional CTOs who can help
+            your business make informed decisions about technology strategy,
+            software development, infrastructure management, and other
+            technology-related aspects. Our experts work closely with your
+            leadership and development teams to ensure the successful planning,
+            execution, and delivery of software projects while maximizing
+            efficiency, security, and scalability. By partnering with
+            CloudReady, you gain access to top-notch technical expertise
+            tailored to your specific needs and goals. Our subscription-based
+            model allows you to scale up or down as your needs change, giving
+            you the flexibility to adjust your level of engagement with our
+            expert team. Ultimately, this helps your business drive better
+            results and stay competitive in the ever-evolving tech landscape.
+          </p>
+        </li>
+      </ul>
     </section>
     <footer>
-        <header>
-            <h6>It’s time you were CloudReady...</h6>
-            <p>Join CloudReady and see how you and your team can change the way you build applications, forever.</p>
-        </header>
-        <div class="btn__styled">
-            <button>Get Started</button>
-        </div>
-        <p class="footer__separator"></p>
-        <figure><img src="images/logo light.png" alt="logo"></figure>
-        <ul class="social__contact">
-            <li class="social__contact_facebook">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="#fff" d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0Z"/></svg>
-            </li>
-            <li class="social__contact_twitter">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path fill="#fff" d="M20 2.172a8.192 8.192 0 0 1-2.357.646 4.11 4.11 0 0 0 1.805-2.27 8.22 8.22 0 0 1-2.606.996A4.096 4.096 0 0 0 13.847.248c-2.65 0-4.596 2.472-3.998 5.037A11.648 11.648 0 0 1 1.392 1a4.109 4.109 0 0 0 1.27 5.478 4.086 4.086 0 0 1-1.858-.513c-.045 1.9 1.318 3.679 3.291 4.075a4.113 4.113 0 0 1-1.853.07 4.106 4.106 0 0 0 3.833 2.849A8.25 8.25 0 0 1 0 14.658a11.616 11.616 0 0 0 6.29 1.843c7.618 0 11.923-6.434 11.663-12.205A8.354 8.354 0 0 0 20 2.172Z"/></svg>
-            </li>
-            <li class="social__contact_instagram">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="#fff" d="M10 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.975 1.409 4.099 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.057 4.042-.124 2.687-1.387 3.975-4.1 4.099-1.054.048-1.37.058-4.041.058-2.67 0-2.987-.01-4.04-.058-2.717-.124-3.977-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058ZM10 0C7.284 0 6.944.012 5.877.06 2.246.227.227 2.242.061 5.877.01 6.944 0 7.284 0 10s.012 3.057.06 4.123c.167 3.632 2.182 5.65 5.817 5.817 1.067.048 1.407.06 4.123.06s3.057-.012 4.123-.06c3.629-.167 5.652-2.182 5.816-5.817.05-1.066.061-1.407.061-4.123s-.012-3.056-.06-4.122C19.777 2.249 17.76.228 14.124.06 13.057.01 12.716 0 10 0Zm0 4.865a5.135 5.135 0 1 0 0 10.27 5.135 5.135 0 0 0 0-10.27Zm0 8.468a3.333 3.333 0 1 1 0-6.666 3.333 3.333 0 0 1 0 6.666Zm5.338-9.87a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4Z"/></svg>
-            </li>
-        </ul>
+      <header>
+        <h6>It’s time you were CloudReady...</h6>
+        <p>
+          Join CloudReady and see how you and your team can change the way you
+          build applications, forever.
+        </p>
+      </header>
+      <div class="btn__styled">
+        <button>Get Started</button>
+      </div>
+      <p class="footer__separator"></p>
+      <figure><img src="images/logo light.png" alt="logo" /></figure>
+      <ul class="social__contact">
+        <li class="social__contact_facebook">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+          >
+            <path
+              fill="#fff"
+              d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0Z"
+            />
+          </svg>
+        </li>
+        <li class="social__contact_twitter">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="17"
+            viewBox="0 0 20 17"
+          >
+            <path
+              fill="#fff"
+              d="M20 2.172a8.192 8.192 0 0 1-2.357.646 4.11 4.11 0 0 0 1.805-2.27 8.22 8.22 0 0 1-2.606.996A4.096 4.096 0 0 0 13.847.248c-2.65 0-4.596 2.472-3.998 5.037A11.648 11.648 0 0 1 1.392 1a4.109 4.109 0 0 0 1.27 5.478 4.086 4.086 0 0 1-1.858-.513c-.045 1.9 1.318 3.679 3.291 4.075a4.113 4.113 0 0 1-1.853.07 4.106 4.106 0 0 0 3.833 2.849A8.25 8.25 0 0 1 0 14.658a11.616 11.616 0 0 0 6.29 1.843c7.618 0 11.923-6.434 11.663-12.205A8.354 8.354 0 0 0 20 2.172Z"
+            />
+          </svg>
+        </li>
+        <li class="social__contact_instagram">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+          >
+            <path
+              fill="#fff"
+              d="M10 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.975 1.409 4.099 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.057 4.042-.124 2.687-1.387 3.975-4.1 4.099-1.054.048-1.37.058-4.041.058-2.67 0-2.987-.01-4.04-.058-2.717-.124-3.977-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058ZM10 0C7.284 0 6.944.012 5.877.06 2.246.227.227 2.242.061 5.877.01 6.944 0 7.284 0 10s.012 3.057.06 4.123c.167 3.632 2.182 5.65 5.817 5.817 1.067.048 1.407.06 4.123.06s3.057-.012 4.123-.06c3.629-.167 5.652-2.182 5.816-5.817.05-1.066.061-1.407.061-4.123s-.012-3.056-.06-4.122C19.777 2.249 17.76.228 14.124.06 13.057.01 12.716 0 10 0Zm0 4.865a5.135 5.135 0 1 0 0 10.27 5.135 5.135 0 0 0 0-10.27Zm0 8.468a3.333 3.333 0 1 1 0-6.666 3.333 3.333 0 0 1 0 6.666Zm5.338-9.87a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4Z"
+            />
+          </svg>
+        </li>
+      </ul>
     </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
