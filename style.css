@@ -594,16 +594,7 @@ footer div button {
     display: none;
   }
   /* navbar */
-  /* plan */
-  .plan__options{
-    transform: translateX(-300px);
-    cursor: default;
-  }
-  .plan__options.grabbing {
-    cursor:default;
 
-  }
-  /* plan */
   /* hero */
   .hero__text h1 {
     font-size: 42px;
@@ -623,8 +614,7 @@ footer div button {
 
 /* ------------------------------------------------------------ small screen 1024px */
 
-
-/* ------------------------------------------------------------ desktop and large screen 1440px > + */
+/* ------------------------------------------------------------ big screens > 1440px */
 @media screen and (min-width: 1240px) {
   .navbar,
   .about {
@@ -636,7 +626,6 @@ footer div button {
   }
 
   /* about */
-
   .about {
     gap: 45px;
   }
@@ -645,5 +634,4 @@ footer div button {
   }
   /* about */
 }
-
-/* ------------------------------------------------------------ desktop and large screen 1440px > + */
+/* ------------------------------------------------------------ big screens > 1440px */
