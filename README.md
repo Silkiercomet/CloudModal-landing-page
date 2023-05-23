@@ -1,63 +1,57 @@
 # CloudModal Landing Page
 
-This repo contains the landing page for CloudModal, is responsive, beautiful, easy to use and will work on any device, the purpose of this project was to practice my frontend skills with a real life project.
+This repository contains the landing page for CloudModal. It is responsive, beautiful, easy to use, and will work on any device. The purpose of this project was to practice my frontend skills with a real-life project.
 
-## Table of contents
+## Table of Contents
 
 - [Overview](#overview)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
+- [My Process](#my-process)
+  - [Built With](#built-with)
+  - [Continued Development](#continued-development)
+  - [Useful Resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
 
-A landing page created with mobile fisr workflow in mind, it has animations and two sliders with small diferences between them, and overall good experience and a beautiful design
+A landing page created with a mobile-first workflow in mind. It has animations and two sliders with small differences between them, providing an overall good experience and a beautiful design.
 
 ### Screenshot
 
 ![workit landing page](./screenshot.jpeg)
 
-
 ### Links
+https://github.com/Silkiercomet/CloudModal-landing-page
+- Solution URL: [github repo](https://github.com/Silkiercomet/CloudModal-landing-page)
+- Live Site URL: [live site URL](https://silkiercomet.github.io/CloudModal-landing-page/)
 
-- Solution URL: [Add solution URL here](https://github.com/Silkiercomet/workit-landing-age-vanilla)
-- Live Site URL: [Add live site URL here](https://github.com/Silkiercomet/CloudModal-landing-page)
+## My Process
 
-## My process
+First, I created the HTML template of the page using the BEM naming convention. I created a well-defined (semantic), intuitive, and readable foundation to start adding the cascading style, which was created from the mobile-first workflow, making the development of larger screens easier. After that, I added the JavaScript for the sliders, fade-in animation, and functionality of an accordion in the script.js file.
 
-firstly i created the html template of the page using the BEM namimg convention i created a well defined (semantic) intuitive and readeable foundation to start adding the cascading style, which was created from the mobile fist workflow making the develop of the bigger screens later an easier job, after it the javascript for the sliders and the fade in animation and funcionalitie of an accordion was also added in the creation of the script.js file
-
-### Built with
+### Built With
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- Javascript
+- JavaScript
 - BEM naming convention
 - Intersection Observer API
 
+### Continued Development
 
+There is a lot to improve, mainly in the script file. Both sliders could have easily used the same querySelector, so the functionality of both could have been defined in a single instance of the drag function. But for the sake of time, I duplicated the code. This goes against the DRY (Don't Repeat Yourself) principle, so that can be done to improve the performance of the page.
 
-### Continued development
+Also, the mobile menu doesn't have a good use because the only option that the navbar offers is the login one, which can be provided with a single button instead of the hamburger menu.
 
-Theres a lot to inprove mainly in the script file, both slider could have easily used the same querySelector so the functionalitie of both would have been defined in a single instance of the drag function, but for a matter of time i just copied the code two times, yes against the dry principle, so that can be done to better the perfomance of the page
+### Useful Resources
 
-also the mobile menu doest have a good use because the only option that de navbar offers is the log in one, which can be offer with a single button instead of the hamburguer menu
-
-
-### Useful resources
-
-- [bem namin convention](https://getbem.com/naming/) 
-- [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) 
+- [BEM naming convention](https://getbem.com/naming/)
+- [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
 
 ## Author
 
-- Website - [Add your name here](https://luis-colina-portfolio.netlify.app/)
-
-
+- Website - [Luis Colina Portfolio](https://luis-colina-portfolio.netlify.app/)
